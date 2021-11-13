@@ -1,5 +1,5 @@
 # Bicycle Emporium
-Live site project link: [Bicycle Emporium](https://tour-de-planet-earth-client.web.app/)
+Server site link: [Bicycle Emporium]( https://hidden-ridge-10259.herokuapp.com/)
 
 ### About Project:
 Bicycle Emporium was opened in October 2010. Back then we were riders. Recreational cycling was something that hadn't yet become mainstream in dhaka, and there were no shop addressing biker's need . Yes, there were shops selling bikes, but with every visit to the local bike store, we realized how discouraging an interaction could be. In time, our frustration became the motivation to open a bike shop which will be honest to customer and their needs, give professional support and service and which will encourage people to try and take up bicycling as a way of life. Our focus was solving the problems that we our self have faced as customer. With the purchase of every bicycle, you will receive 6 months of servicing free. We also have our weekly rides to help you enjoy the whole experience .Our monthly tech sessions are designed to make you more hands on.
