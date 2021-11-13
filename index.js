@@ -83,30 +83,41 @@ async function run() {
         //--------------------------ADMIN--------------------------
 
         // GET API OF ADMIN
+        // app.get('/users/:email', async (req, res) => {
+
+        //     const email = req.params.email;
+        //     if (email) {
+        //         const query = { email: email };
+        //         const user = await usersCollection.findOne(query);
+        //         // console.log('this is user', user);
+        //         let isAdmin = false;
+        //         // if (user) {
+        //             if (user?.role === 'admin') {
+        //                 isAdmin = true;
+        //             }
+        //             res.json({ admin: isAdmin });
+        //         // }
+        //         // else {
+        //         //     res.json({ admin: false });
+        //         // }
+
+        //     }
+        //     else {
+        //         res.json({ admin: false });
+        //     }
+
+        // });
+
         app.get('/users/:email', async (req, res) => {
-
             const email = req.params.email;
-            if (email) {
-                const query = { email: email };
-                const user = await usersCollection.findOne(query);
-                // console.log('this is user', user);
-                let isAdmin = false;
-                if (user) {
-                    if (user.role === 'admin') {
-                        isAdmin = true;
-                    }
-                    res.json({ admin: isAdmin });
-                }
-                else {
-                    res.json({ admin: false });
-                }
-
+            const query = { email: email };
+            const user = await usersCollection.findOne(query);
+            let isAdmin = false;
+            if (user?.role === 'admin') {
+                isAdmin = true;
             }
-            else {
-                res.json({ admin: false });
-            }
-
-        });
+            res.json({ admin: isAdmin });
+        })
 
         // PUT API OF ADMIN
 
